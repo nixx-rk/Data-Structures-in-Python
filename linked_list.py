@@ -56,18 +56,33 @@ class linked_list:
             cur_index+=1
 
 
+#lets try creating a list and perform different operations using above defined functions.
+a=linked_list() # initialize list
 
-a=linked_list()
+#now let's add new nodes
 a.append(5)
 a.append(8)
 a.append(90)
+
+#now, let's print the length of list
+print(a.length())
+
+#display the elements of the list
+a.display()
+
+#again add more nodes
+a.append(15)
+a.append(38)
+a.append(70)
+
+#again print the new length and display the elements
 print(a.length())
 a.display()
-a.append(5)
-a.append(8)
-a.append(90)
-print(a.length())
-a.display()
+
+#get the element present at a particular index
 print(a.get(4))
+
+#deleting(removing) a node from the list
 a.erase(3)
+#again diplay the elements
 a.display()
